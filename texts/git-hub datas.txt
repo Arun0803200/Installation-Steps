@@ -1,0 +1,60 @@
+git hub:-
+---------
+email:    kuttyarun1066@gmail.com
+username: Arun0803200
+
+how to generate ssh key on windows:-
+--------------------------------------
+1.) install terminal for windows from microsoft store
+
+2.) launch the terminal
+
+3.) ssh-keygen ---> enter
+
+4.) Enter file in which to save the key (C:\Users\HELLO/.ssh/id_rsa):  ---> enter
+
+5.) Overwrite (y/n)? y ---> enter
+
+6.) Enter passphrase (empty for no passphrase): ---> put passwork
+
+7.)Enter same passphrase again: ---> put password
+
+8.) finally key will genereted into you mentiond path
+-------------------------------------------------------------------------------------------------
+
+Git access cmt:-
+-----------------
+
+clone cmt:-
+------------
+
+git clone -b branchname <path>
+
+push steps:-
+----------------
+
+git status
+git add .
+git checkout -b newbranchname
+git commit -m "..."
+git push origin branchname
+-----------------------------------------------------------------------------------------------
+How to install git hub in windows
+------------------------------------
+
+1.) https://git-scm.com/download/win  -> Go to this url and click the download button then select the windows after install asusual
+
+_____________________________________________________________________________________________________
+How to install vscode
+-----------------------
+
+1.) https://code.visualstudio.com/docs/?dv=win64user
+
+_____________________________________________________________________________________________________
+
+How to install mysql for windows:-
+----------------------------------------
+
+1.) https://dev.mysql.com/downloads/file/?id=523568
+
+______________________________________________________________________________________________________

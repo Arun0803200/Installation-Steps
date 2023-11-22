@@ -1,0 +1,34 @@
+how to download typeorm project on windows:-
+---------------------------------------------
+1.) Install node js and vs-code then restart the system
+2.) Install xampp and set mysql & click admin after install the xampp
+3.) Install nvm-setup.zip from "https://github.com/coreybutler/nvm-windows/releases"
+4.) After install the nvm setup then use u r wish node version. Our using project node version is 12.14.0
+
+5.) Install typeorm globaly (npm i -g typeorm) then after put "typeorm init"
+	i.) i faced "File C:\Program Files\nodejs\typeorm.ps1 cannot be losee about_Execution_Policies at https:/go.microsoft.com/fwlink/" this type of error.
+	
+	ii.) How to solve this error?
+		--> PS C:\Users\HELLO\Documents\My Document\my project> set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+		--> PS C:\Users\HELLO\Documents\My Document\my project> Get-ExecutionPolicy
+			RemoteSigned
+
+       			 Scope ExecutionPolicy
+        		 ----- ---------------
+			MachinePolicy       Undefined
+   			UserPolicy       Undefined
+      			Process       Undefined
+  			CurrentUser    RemoteSigned	
+			LocalMachine       Undefined
+6.) Enter:- typeorm init --name (project name) --database (database name)
+		(e.g) [typeorm init --name eticket --database mysql]
+
+	
+7.) How to create Migration on a current directory
+	|
+	-----> typeorm migration:create CreateUser  
+
+	|
+        -----> After install the (npm install -g ts-node) 
+	-----> execute (npm run typeorm migration:create ./src/database/Migrations/[migration class name])
+	-----> (e.g) [npm run typeorm migration:create ./scr/database/Migration/UsetTable]
