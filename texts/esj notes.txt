@@ -1,0 +1,7 @@
+what is ejs?
+
+1.) which is templating language for generating dynamic html content.
+
+2.) It's allow you to embed js code with in your HTML files.
+
+3.) It's easier to generate dynamic content based on data logic.

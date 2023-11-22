@@ -1,0 +1,12 @@
+Admin_user 
+	|
+	---> can create college_admin
+	|
+	---> can 	
+\
+
+Student_user
+
+
+college_user
+

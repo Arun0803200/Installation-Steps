@@ -1,0 +1,48 @@
+mongoose program
+------------------
+
+1.) when i insatall npm jsonwebtoken then i faced error
+ 
+npm ERR! code ERESOLVE
+
+there i followed steps:-
+
+*) npm install jsonwebtoken --legacy-peer-deps
+--------------------------------------------------------------------------------------
+2.) how to create build file in mongodb:-
+
+step 1: 
+--------
+fix that compiler option on tsconfig.json file
+
+{
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noEmitOnError": true,
+    "removeComments": false,
+    "sourceMap": true,
+    "target": "es5",
+    "outDir": "dist"
+  }
+}
+
+step 2:
+-------
+run the - "npm update" ---> command
+
+step 3:
+-------
+mention that line in ' "build": "tsc --build" 'on script package.json file
+
+example:-
+
+"scripts": {
+  "build": "tsc --build"
+},
+
+typeorm with mongo db
+----------------------
+how to search with incase-sencitiev:
+-------------------------------------
+{$regex: collegeName, $options: 'i'}
+

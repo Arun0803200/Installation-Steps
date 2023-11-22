@@ -1,0 +1,105 @@
+default typeorm structure:-
+---------------------------------
+primary key column:-
+
+	       {
+                    name: 'founder_id',
+                    type: 'INT',
+                    isPrimary: true,
+                    isNullable: false,
+                    isGenerated: true,
+                    generationStrategy: 'increment'
+                },
+
+Integer column:-
+
+	       {
+                    name: 'comission',
+                    type: "INT",
+                    isPrimary: false,
+                    isNullable: true
+                },
+
+string (or) archar column:-
+
+		{
+                    name: 'address_1',
+                    type: 'varchar',
+                    length: '225',
+                    isPrimary: false,
+                    isNullable: true,
+                },
+
+base_columns:-
+
+                {
+                    name: 'created_by',
+                    type: 'int',
+                    length: '11',
+                    isPrimary: false,
+                    isNullable: true,
+                },
+                {
+                    name: 'created_date',
+                    type: 'date',
+                    default: 'CURRENT_TIMESTAMP',
+                    isPrimary: false,
+                    isNullable: true,
+                },
+                {
+                    name: 'modified_by',
+                    type: 'int',
+                    length: '11',
+                    isPrimary: false,
+                    isNullable: true,
+                },
+                {
+                    name: 'modified_date',
+                    type: 'date',
+                    default: 'CURRENT_TIMESTAMP',
+                    isPrimary: false,
+                    isNullable: true,
+                }
+
+
+
+
+Base Table:-
+--------------
+created_date, modified_date, created_by, modified_by
+__________________________________________________________________________________
+User Table:-
+--------------
+id, user_name, password, mobile_no, email, is_active, delete_flag, created_by,
+ base_table ...
+__________________________________________________________________________________
+Token table :-
+--------------
+token_id, token, is_active, base_table...
+__________________________________________________________________________________
+Founder Table :-
+--------------
+founder_id, founder_name, mobile_no, pin_code, email, company_name, company_url, comissinon, address1, 
+address2,state, district, country, approval_flag, is_active, delete_flag, 
+base_table ...
+__________________________________________________________________________________
+theatre_tbl :-
+--------------
+theater_id, founder_id, approval_flag, licience_no, address_1, address_2, 
+is_active, is_delete,base_table ...
+__________________________________________________________________________________
+screen_tbl :-
+--------------
+screen_id, theater_id, no_of_column, no_of_rows, date, movie_name,
+start_time , end_time, base_table, ...
+__________________________________________________________________________________
+seat_tbl :-
+--------------
+theater_id, screen_id, is_booking, movie_name, date, 
+start_time, end_time, base_table, ...
+__________________________________________________________________________________
+booking_table :-
+--------------
+booking_id, customer_id, theater_id, screen_id, seat_id, date, start_time, end_time,
+base_table ...
+__________________________________________________________________________________
