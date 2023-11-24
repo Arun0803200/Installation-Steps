@@ -58,3 +58,40 @@ How to install mysql for windows:-
 1.) https://dev.mysql.com/downloads/file/?id=523568
 
 ______________________________________________________________________________________________________
+How to install node js:
+--------------------------
+go to the node js install page then click the current version asusual to install the process
+
+_____________________________________________________________________________________________________
+How to install nvm:
+--------------------
+1.) go to this web site "https://github.com/coreybutler/nvm-windows/releases"
+
+2.) click "nvm-setup.zip"
+
+3.) extract this file and do the asusual steps.
+
+-> nvm install 16.14.0
+_____________________________________________________________________________________________________
+
+How to install Mysql:
+
+1.) go to this web-site "https://dev.mysql.com/downloads/installer/"
+
+2.) click this versions msi "(mysql-installer-web-community-8.0.35.0.msi)"
+
+3.) click "No thanks, just start my download."
+
+4.) asusual install the process --> click custom, --> choose server and workbendh
+
+_____________________________________________________________________________________________________
+
+How to install Mongodb
+-----------------------
+
+1.) go to the url ---> https://www.mongodb.com/try/download/community
+
+2.) choose platform windows
+
+3.) choose package msi
+_____________________________________________________________________________________________________
