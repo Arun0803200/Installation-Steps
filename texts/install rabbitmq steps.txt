@@ -1,6 +1,6 @@
 How to create rabbitmq in windows ?
 ------------------------------------
-step 1: go to "erlang.org" and download it for windows.
+step 1: go to "erlang.org" and download it for windows. install erlang befor install the rabbitmq
 
 step 2: go to "https://www.rabbitmq.com/install-windows.html" and download for 32 or 64 bits.
 
