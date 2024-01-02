@@ -6,8 +6,8 @@ step 2: go to "https://www.rabbitmq.com/install-windows.html" and download for 3
 
 step 3: Install the both flat-forms.
 
-step 4: open terminal and navigate the path to "C:\Program Files\RabbitMQ Server\rabbitmq_server-3.12.0\sbin".
+step 4: open rabbitmq cmt prompt when click the start button navigate the path to "C:\Program Files\RabbitMQ Server\rabbitmq_server-3.12.10\sbin".
 
-step 5: put "rabbitmq-plugins enable rabbitmq_management" after gie enter and acces for something.
+step 5: put "rabbitmq-plugins enable rabbitmq_management" after give enter and access for something.
 
 step 6: go to chrome and search "localhost:15672"
