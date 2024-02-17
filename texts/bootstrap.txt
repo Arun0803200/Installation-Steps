@@ -1,0 +1,38 @@
+What is bootstrap ?
+It is front end development framework for creation of website and web apps.
+
+how install bootstrap in offlien ?
+-----------------------------------
+
+1.) Go to this web-site:-
+     https://getbootstrap.com/docs/5.3/getting-started/download/
+
+2.) Then download the 'Compiled CSS and JS'. once it is download  next got to link the downloaded into our html file.
+
+3.) Create Assets file in your directory the drag and drop that downloaded file.
+   
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css"> use this code to link the css file in header tag.
+   <script src="./assets/js/bootstrap.min.js"></script> use this linkin body tag.
+
+4.) Next go to congigure the jquery file in the directory.
+    Go this site "https://code.jquery.com/jquery-3.7.1.min.js" and select all then copy the content.
+    configure the jquery file before bootstrap configuration in header tag.
+    like --> "    <script src="./assets/jquery.min.js"></script>
+                  <script src="./assets/js/bootstrap.min.js"></script>"
+
+5.) Can able to download npm and configure as same as 4 th point.
+
+Bootstrap Container:-
+---------------------
+
+1.) Using container class from bootstrap is used to give the even space from right and left hand side
+    <div class="container bg" >
+        <h1>Welcome to Bootstrap</h1>
+        <p>Start Learning</p>
+    </div>
+
+2.) Container-fluid. --> It is give full width for all size of screen
+    <div class="container-fluid bg" >
+        <h1>Welcome to Bootstrap</h1>
+        <p>Start Learning</p>
+    </div>
