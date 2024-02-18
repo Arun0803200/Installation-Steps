@@ -1,0 +1,16 @@
+ip of enrollment - 54.175.85.95
+
+instanceId=i-0c323a1d9e1109db9
+
+ssh -i "enrollment.pem" ubuntu@ec2-54-175-85-95.compute-1.amazonaws.com ---> For open ubuntu terminal in windows bash
+
+For check and get the connections:-
+https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#ConnectToInstance:instanceId=i-0c323a1d9e1109db9
+
+How to install node js in server terminal:-
+-------------------------------------------
+refer this url-> https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
+sudo apt update
+sudo apt install nodejs
+node -v
+sudo apt install npm
