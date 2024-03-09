@@ -11,3 +11,14 @@ step 4: open rabbitmq cmt prompt when click the start button navigate the path t
 step 5: put "rabbitmq-plugins enable rabbitmq_management" after give enter and access for something.
 
 step 6: go to chrome and search "localhost:15672"
+
+Install RabbitMQ in Ubuntu machine:-
+------------------------------------
+1  sudo apt-get upgrade
+2  sudo apt-get update
+3  apt-get install erlang
+4  sudo apt-get install erlang
+5  sudo apt-get install rabbitmq-server
+6  sudo systemctl enable rabbitmq-server
+7  sudo systemctl start rabbitmq-server
+8  sudo systemctl status rabbitmq-server

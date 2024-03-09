@@ -1,0 +1,38 @@
+ip of enrollment - 54.175.85.95
+http://54.175.85.95/ ---> This is ip
+
+instanceId=i-0c323a1d9e1109db9
+
+ssh -i "enrollment.pem" ubuntu@ec2-54-175-85-95.compute-1.amazonaws.com ---> For open ubuntu terminal in windows bash
+
+latest:-
+---------
+http://3.93.64.138/
+ssh -i "arundhikaserver.pem" ubuntu@ec2-3-93-64-138.compute-1.amazonaws.com
+
+For check and get the connections:-
+https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#ConnectToInstance:instanceId=i-0c323a1d9e1109db9
+https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#ConnectToInstance:instanceId=i-04ce15fd03bbf3d97
+
+how to install mongo db:-
+--------------------------
+https://www.cherryservers.com/blog/install-mongodb-ubuntu-22-04
+
+How to install node js in server terminal:-
+-------------------------------------------
+refer this url-> https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
+sudo apt update
+sudo apt install nodejs
+node -v
+sudo apt install npm
+
+MySQL username for phpmyadmin:
+phpmyadmin@localhost
+
+how to install aapchi in ubuntu terminal:-
+------------------------------------------
+
+sudo apt upgrade
+sudo apt update
+sudo apt install apache2
+sudo systemctl status apache2
