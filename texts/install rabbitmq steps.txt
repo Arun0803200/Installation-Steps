@@ -16,7 +16,6 @@ Install RabbitMQ in Ubuntu machine:-
 ------------------------------------
 1  sudo apt-get upgrade
 2  sudo apt-get update
-3  apt-get install erlang
 4  sudo apt-get install erlang
 5  sudo apt-get install rabbitmq-server
 6  sudo systemctl enable rabbitmq-server
