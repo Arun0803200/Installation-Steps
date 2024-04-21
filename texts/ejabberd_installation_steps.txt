@@ -1,0 +1,28 @@
+    1  export VER="23.04"
+    2  wget https://static.process-one.net/ejabberd/downloads/${VER}/ejabberd_${VER}-1_amd64.deb
+    3  sudo apt install -f ./ejabberd_${VER}-1_amd64.deb
+    4  sudo cp $(sudo find / -name ejabberd service)
+    5  sudo systemctl daemon-reload
+    6  sudo find / -name ejabberdctl
+    7  sudo nano ~/.bash
+    8  .source ~/. bashrc
+    9  source ~/. bashrc
+   10  .source ~/. bashrc --
+   11  .source ~/. bashrc--
+   12  sudo nano ~/.bash --
+   13  sudo nano ~/.bash--
+   14  sudo ejabberdctl status
+   15  sudo ejabberdctl register admin localhost password
+
+   Instructions:-
+   --------------
+   in before register a user need to setup to the host in .yml file
+   hosts:
+  - "localhost"
+_________________________________________________________________________________________________________________________
+
+i am getting Error like "Cookie file /opt/ejabberd/.erlang.cookie must be accessible by owner only"
+----------------------------------------------------------------------------------------------------
+ubuntu@ip-172-31-20-225:/opt/ejabberd$ ls -l /opt/ejabberd/.erlang.cookie -> This is command for check what are the permission are given and list that permissions
+ubuntu$ sudo chown ejabberd:ejabberd .erlang.cookie -> This cmt is used to Adjust Ownership and Permissions
+ubuntu$ sudo chmod 600 .erlang.cookie

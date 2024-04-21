@@ -1,5 +1,6 @@
 ip of enrollment - 54.175.85.95
 http://54.175.85.95/ ---> This is ip
+http://172.31.81.39/
 
 instanceId=i-0c323a1d9e1109db9
 
@@ -7,16 +8,23 @@ ssh -i "enrollment.pem" ubuntu@ec2-54-175-85-95.compute-1.amazonaws.com ---> For
 
 latest:-
 ---------
-http://3.93.64.138:8000/api/
-ssh -i "arundhikaserver.pem" ubuntu@ec2-3-93-64-138.compute-1.amazonaws.com
+ssh -i "arundhika4.pem" ubuntu@ec2-54-221-189-253.compute-1.amazonaws.com
+
+public IP -> 54.221.189.253
 
 For check and get the connections:-
-https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#ConnectToInstance:instanceId=i-0c323a1d9e1109db9
+https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#ConnectToInstance:instanceId=i-0797eb634a249b880
 https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#ConnectToInstance:instanceId=i-04ce15fd03bbf3d97
+
+atest:-
+--------
+https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#ConnectToInstance:instanceId=i-0d498d9e336554452
 
 how to install mongo db:-
 --------------------------
 https://www.cherryservers.com/blog/install-mongodb-ubuntu-22-04
+
+cmt for open mongodb in terminal -> "mongosh"
 
 How to install node js in server terminal:-
 -------------------------------------------
@@ -25,6 +33,20 @@ sudo apt update
 sudo apt install nodejs
 node -v
 sudo apt install npm
+
+nvm installation:
+-------------------
+https://host-world.com/how-to-install-nvm-on-ubuntu-step-by-step-tutorial
+   23  sudo apt-get install curl
+   24  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+   25  wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+   26  source ~/.bashrc
+   27  nvm –version
+   28  nvm use 16.14.0
+   29  nvm install 16.14.0
+   30  nvm use 16.14.0
+
+-------------------------------------------------------------------------------------------
 
 MySQL username for phpmyadmin:
 phpmyadmin@localhost
@@ -48,3 +70,14 @@ how to install pm2:-
    66  pm2 startup
    67  sudo env PATH=$PATH:/home/ubuntu/.nvm/versions/node/v16.14.0/bin /home/ubuntu/.nvm/versions/node/v16.14.0/lib/node_modules/pm2/bin/pm2 startup systemd -u ubuntu --hp /home/ubuntu
    68  pm2 list
+
+---------------------------------------------------
+How to proxt the apache server:
+________________________________
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+
+        <Location /ejabberd/admin>
+                ProxyPass http://localhost:5028
+                ProxyPassReverse http://localhost:5028
+        </Location>
