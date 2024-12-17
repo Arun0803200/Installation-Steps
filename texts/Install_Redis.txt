@@ -1,0 +1,5 @@
+1.) Open the ink "https://github.com/microsoftarchive/redis/releases"
+2.) Download the .zip file
+3.) Extract the zip file on local directory
+4.) First Open the "redis-server" from extracted Folder
+5.) Open the "redis-cli" 
